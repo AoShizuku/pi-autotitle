@@ -1,0 +1,50 @@
+{
+  "name": "@aoshizuku/pi-autotitle",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Automatic session titles for pi: tool-first with text mode",
+  "license": "MIT",
+  "author": "AoShizuku",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AoShizuku/pi-autotitle.git"
+  },
+  "homepage": "https://github.com/AoShizuku/pi-autotitle#readme",
+  "bugs": {
+    "url": "https://github.com/AoShizuku/pi-autotitle/issues"
+  },
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "session-title",
+    "autotitle"
+  ],
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "files": [
+    "src",
+    "!src/**/*.test.ts"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "^1.5.0",
+    "@earendil-works/pi-coding-agent": "^1.5.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
